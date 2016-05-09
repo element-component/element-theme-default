@@ -1,0 +1,202 @@
+:root {
+
+  /* Colors
+  -------------------------- */
+  --color-blue: #2e90fe;
+  --color-blue-light: #5da9ff;
+  --color-blue-lighter: rgba(var(--color-blue), 0.12);
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey: #ccc;
+
+  /* Border
+  -------------------------- */
+  --border-width-base: 1px;
+  --border-style-base: solid;
+  --border-color-base: var(--color-grey);
+  --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+  --border-radius-base: 2px;
+  --border-radius-circle: 100%;
+  --shadow-base: 0 0 2px rgba(var(--color-black), 0.18), 0 0 1px var(--color-blue-light);
+
+  /* Fill
+  -------------------------- */
+  --fill-base: var(--color-white);
+  --fill-disabled-base: #eee;
+
+  /* Font
+  -------------------------- */
+  --font-size-base: 12px;
+  --font-color-base: #333;
+  --font-color-disabled-base: #bbb;
+
+  /* Size
+  -------------------------- */
+  --size-base: 14px;
+
+  /* z-index
+  -------------------------- */
+  --index-normal: 1;
+  --index-top: 1000;
+
+  /* Checkbox
+  -------------------------- */
+  --checkbox-font-size: var(--font-size-base);
+  --checkbox-color: var(--font-color-base);
+  --checkbox-color-disabled: var(--font-color-disabled-base);
+  --checkbox-input-height: var(--size-base);
+  --checkbox-input-width: var(--size-base);
+  --checkbox-input-border: var(--border-base);
+  --checkbox-input-border-color: var(--border-color-base);
+  --checkbox-input-border-color-checked: var(--color-blue);
+  --checkbox-input-border-color-disabled: var(--border-color-base);
+  --checkbox-input-border-radius: var(--border-radius-base);
+  --checkbox-input-fill: var(--fill-base);
+  --checkbox-input-fill-checked: var(--color-blue);
+  --checkbox-input-fill-disabled: var(--fill-disabled-base);
+  --checkbox-icon-color: var(--fill-base);
+  --checkbox-icon-color-checked: var(--fill-base);
+  --checkbox-icon-color-disabled: var(--fill-disabled-base);
+  --checkbox-icon-color-disabled-selected: var(--border-color-base);
+  --checkbox-input-shadow-hover: var(--shadow-base);
+  --checkbox-input-border-color-hover: var(--color-blue-light);
+
+  /* Radio
+  -------------------------- */
+  --radio-font-size: var(--font-size-base);
+  --radio-color-disabled: var(--font-color-disabled-base);
+  --radio-color: var(--font-color-base);
+  --radio-input-border: var(--border-base);
+  --radio-input-border-color: var(--border-color-base);
+  --radio-input-border-color-checked: var(--border-color-base);
+  --radio-input-border-color-disabled: var(--border-color-base);
+  --radio-input-border-radius: var(--border-radius-circle);
+  --radio-input-fill: var(--fill-base);
+  --radio-input-fill-checked: var(--fill-base);
+  --radio-input-fill-disabled: var(--fill-disabled-base);
+  --radio-input-height: var(--size-base);
+  --radio-input-width: var(--size-base);
+  --radio-icon-color: var(--fill-base);
+  --radio-icon-color-checked: var(--color-blue);
+  --radio-icon-color-disabled: var(--fill-disabled-base);
+  --radio-icon-color-disabled-selected: var(--border-color-base);
+  --radio-input-shadow-hover: var(--shadow-base);
+  --radio-input-border-color-hover: var(--color-blue-light);
+
+  /* Input
+  -------------------------- */
+  --input-font-size: var(--font-size-base);
+  --input-color: var(--font-color-base);
+  --input-width: 140px;
+  --input-height: 30px;
+  --input-shadow-hover: var(--shadow-base);
+  --input-border: var(--border-base);
+  --input-border-color: var(--border-color-base);
+  --input-border-radius: var(--border-radius-base);
+  --input-border-color-hover: var(--color-blue-light);
+  --input-fill: var(--fill-base);
+  --input-fill-disabled: var(--fill-disabled-base);
+  --input-color-disabled: var(--font-color-disabled-base);
+  --input-icon-color: var(--color-grey);
+  --input-placeholder-color: #bbb;
+  --input-max-width: 314px;
+
+  /* Dropdown
+  -------------------------- */
+  --dropdown-fill: var(--fill-base);
+  --dropdown-font-size: var(--font-size-base);
+  --dropdown-radius: var(--border-radius-base);
+  --dropdown-border: var(--border-base);
+  --dropdown-border-color: var(--border-color-base);
+  --dropdown-border-width: var(--border-width-base);
+  --dropdown-color: var(--font-color-base);
+  --dropdown-option-color-active: var(--color-blue);
+  --dropdown-option-fill-active: rgba(var(--color-blue), 0.12);
+  --dropdown-option-color-hover: var(--font-color-base);
+  --dropdown-option-fill-hover: rgba(var(--color-black), 0.06);
+  --dropdown-option-color-disabled: #999;
+  --dropdown-option-fill-disabled: rgba(var(--color-black), 0.06);
+  --dropdown-option-empty-color: #666;
+  --dropdown-group-color: #999;
+  --dropdown-shadow: 0 1px 2px rgba(var(--color-black), 0.14), 0 0 3px rgba(var(--color-black), 0.14);
+  --dropdown-option-pinyin-color: #999;
+  --dropdown-submenu-shadow: 1px 1px 2px rgba(var(--color-black), 0.14), 1px 0 2px rgba(var(--color-black), 0.14);
+
+  /* Tag
+  -------------------------- */
+  --tag-color: var(--font-color-base);
+  --tag-fill: #e2e2e2;
+  --tag-border-radius: var(--border-radius-base);
+  --tag-close-color: #666;
+
+  /* Group
+  -------------------------- */
+  --group-option-flex: 0 0 (1/5) * 100%;
+  --group-option-offset-bottom: 12px;
+  --group-option-fill-hover: rgba(var(--color-black), 0.06);
+  --group-title-color: var(--color-black);
+  --group-title-font-size: var(--font-size-base);
+  --group-title-width: 66px;
+
+  /* Tab
+  -------------------------- */
+  --tab-font-size: var(--font-size-base);
+  --tab-border-line: 1px solid #e4e4e4;
+  --tab-header-color-active: var(--color-blue);
+  --tab-header-color-hover: var(--font-color-base);
+  --tab-header-color: var(--font-color-base);
+  --tab-header-fill-active: rgba(var(--color-black), 0.06);
+  --tab-header-fill-hover: rgba(var(--color-black), 0.06);
+  --tab-vertical-header-width: 90px;
+  --tab-vertical-header-count-color: var(--color-white);
+  --tab-vertical-header-count-fill: var(--color-blue);
+  --tab-horizontal-border: 2px solid #438de0;
+
+  /* Button
+  -------------------------- */
+  --button-border-radius: var(--border-radius-base);
+  --button-default-border: var(--border-base);
+  --button-default-color: #666;
+  --button-default-fill: var(--fill-base);
+  --button-ghost-color: #666;
+  --button-ghost-fill: transparent;
+  --button-ghost-border: none;
+  --button-font-size: var(--font-size-base);
+  --button-paddding: 5px 20px;
+  --button-primary-border: var(--color-blue);
+  --button-primary-color: var(--color-white);
+  --button-primary-fill: var(--color-blue);
+
+  /* Shop-type-picker
+  -------------------------- */
+  --shoptypepicker-dropdown-width: 360px;
+  --shoptypepicker-dropdown-height: 140px;
+  --shoptypepicker-option-color-hover: var(--font-color-base);
+  --shoptypepicker-option-fill-hover: rgba(var(--color-black), 0.06);
+  --shoptypepicker-option-color-active: var(--color-blue);
+  --shoptypepicker-option-fill-active: rgba(var(--color-blue), 0.12);
+  --shoptypepicker-option-color-disabled: var(--font-color-disabled-base);
+  --shoptypepicker-option-fill-disabled: rgba(var(--color-black), 0.06);
+  --shoptypepicker-option-flex: 0 0 (1/3) * 100%;
+  --shoptypepicker-input-width: 314px;
+
+  /* City-picker
+  -------------------------- */
+  --citypicker-dropdown-wdith: 388px;
+  --citypicker-dropdown-height: 133px;
+  --citypicker-dropdown-flex: 0 0 (1/6) * 100%;
+  --citypicker-dropdown-flex-hastitle: 0 0 (1/5) * 100%;
+  --citypicker-dropdown-title-color: #000;
+
+  /* Event-picker
+  -------------------------- */
+  --eventpicker-dropdown-width: 770px;
+  --eventpicker-dropdown-height: 428px;
+  --eventpicker-dropdown-flex: 0 0 (1/3) * 100%;
+  --eventpicker-dropdown-sidebar-width: 140px;
+  --eventpicker-input-width: 294px;
+
+  /* Organization-Picker
+  -------------------------- */
+  --organizationpicker-height: 200px;
+}

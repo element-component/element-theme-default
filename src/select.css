@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import "./common/var.css";
+@import "./core/dropdown.css";
+@import "./core/tag.css";
+@import "./core/input.css";
+
+@component-namespace element {
+
+  @b select {
+    background-color: var(--input-fill);
+    display: inline-block;
+    position: relative;
+
+    @e empty {
+      color: var(--dropdown-option-empty-color);
+      font-size: var(--input-font-size);
+      padding: 7px;
+      text-align: center;
+    }
+
+    @e chevron {
+
+      &::after {
+        border: 4px solid var(--input-icon-color);
+        border-left-color: transparent;
+        border-radius: 1px;
+        border-top-color: transparent;
+        content: " ";
+        display: block;
+        margin-top: -6px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: rotate(45deg);
+      }
+
+      @when up {
+
+        &::after {
+          margin-top: -2px;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+
+  }
+}
