@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import "./common/var.css";
+
+@component-namespace element {
+
+  @b checkbox {
+    color: var(--checkbox-color);
+    position: relative;
+
+    @e input {
+      display: inline-block;
+      line-height: 0;
+      position: relative;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    @e inner {
+      background-color: var(--checkbox-input-fill);
+      border: var(--checkbox-input-border);
+      border-radius: var(--checkbox-input-border-radius);
+      cursor: pointer;
+      display: inline-block;
+      height: var(--checkbox-input-height);
+      left: 0;
+      position: relative;
+      top: 0;
+      width: var(--checkbox-input-width);
+      z-index: var(--index-normal);
+
+      &:not(.is-disabled):hover {
+        border-color: var(--checkbox-input-border-color-hover);
+        box-shadow: var(--checkbox-input-shadow-hover);
+      }
+
+      &::after {
+        border: 2px solid var(--checkbox-icon-color);
+        border-left: 0;
+        border-top: 0;
+        content: " ";
+        display: table;
+        height: 8px;
+        left: 4px;
+        position: absolute;
+        top: 1px;
+        transform: rotate(45deg);
+        width: 4px;
+      }
+
+      @when disabled {
+        background-color: var(--checkbox-input-fill-disabled);
+        border-color: var(--checkbox-input-border-color-disabled);
+        cursor: not-allowed;
+
+        &::after {
+          border-color: var(--checkbox-icon-color-disabled);
+        }
+      }
+
+      @when checked {
+        background-color: var(--checkbox-input-fill-checked);
+        border-color: var(--checkbox-input-border-color-checked);
+
+        &::after {
+          border-color: var(--checkbox-icon-color-checked);
+        }
+      }
+
+      &.is-disabled.is-checked::after {
+        border-color: var(--checkbox-icon-color-disabled-selected);
+      }
+    }
+
+    @e original {
+      opacity: 0;
+      outline: none;
+      position: absolute;
+    }
+
+    @e label {
+      font-size: var(--checkbox-font-size);
+    }
+
+  }
+}

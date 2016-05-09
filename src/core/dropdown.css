@@ -3,6 +3,7 @@
 @import "./option.css";
 
 @component-namespace element {
+
   @b dropdown {
     background-color: var(--dropdown-fill);
     border: var(--dropdown-border);

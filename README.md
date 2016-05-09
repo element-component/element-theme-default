@@ -24,4 +24,4 @@ import 'element-theme-default/dist/input.css';
 import 'element-theme-default/dist/select.css';
 
 // ...
-```# element-theme-default
+```

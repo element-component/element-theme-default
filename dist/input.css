@@ -203,6 +203,7 @@
 }
 .element-input__placeholder{
   background-color: inherit;
+  background-color: #fff;
   color: #ccc;
   left: 4px;
   padding: 0 2px;
@@ -210,7 +211,6 @@
   top: 7px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  background-color: #fff;
   z-index: 1
 }
 .element-input__placeholder.is-enter{

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import "./common/var.css";
+
+@component-namespace element {
+
+  @b radio {
+    color: var(--radio-color);
+    position: relative;
+
+    @e input {
+      display: inline-block;
+      line-height: 0;
+      position: relative;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    @e inner {
+      background-color: var(--radio-input-fill);
+      border: var(--radio-input-border);
+      border-radius: var(--radio-input-border-radius);
+      cursor: pointer;
+      display: inline-block;
+      height: var(--radio-input-height);
+      left: 0;
+      position: relative;
+      top: 0;
+      width: var(--radio-input-width);
+      z-index: var(--index-normal);
+
+      &:not(.is-disabled):hover {
+        box-shadow: var(--radio-input-shadow-hover);
+        border-color: var(--radio-input-border-color-hover);
+      }
+
+      &::after {
+        background-color: var(--radio-icon-color);
+        border-radius: var(--border-radius-circle);
+        content: " ";
+        display: table;
+        height: 8px;
+        left: 3px;
+        position: absolute;
+        top: 3px;
+        width: 8px;
+      }
+
+      @when disabled {
+        background-color: var(--radio-input-fill-disabled);
+        border-color: var(--radio-input-border-color-disabled);
+        cursor: not-allowed;
+
+        &::after {
+          background-color: var(--radio-icon-color-disabled);
+        }
+      }
+
+      @when checked {
+        border-color: var(--radio-input-border-color-hover);
+
+        &::after {
+          background-color: var(--radio-icon-color-checked);
+        }
+      }
+
+      &.is-disabled.is-checked::after {
+        background-color: var(--radio-icon-color-disabled-selected);
+      }
+    }
+
+    @e original {
+      opacity: 0;
+      outline: none;
+      position: absolute;
+    }
+
+    @e label {
+      font-size: var(--radio-font-size);
+    }
+  }
+}
