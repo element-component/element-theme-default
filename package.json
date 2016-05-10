@@ -27,13 +27,12 @@
   },
   "homepage": "https://github.com/element-component/element-theme-default#readme",
   "devDependencies": {
-    "postcss-bem": "^0.4.1",
     "postcss-cli": "^2.5.2",
-    "postcss-cssnext": "^2.5.2",
     "postcss-hexrgba": "^0.2.0",
     "postcss-import": "^8.1.1",
-    "postcss-partial-import": "^1.3.0",
+    "postcss-nesting": "^2.3.1",
     "postcss-reporter": "^1.3.3",
+    "postcss-salad": "^1.0.0",
     "stylelint": "^6.2.2",
     "stylelint-config-suitcss": "^6.0.0"
   }

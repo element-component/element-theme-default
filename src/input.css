@@ -12,7 +12,6 @@
     position: relative;
 
     @e placeholder {
-      background-color: inherit;
       background-color: #fff;
       color: var(--input-border-color);
       left: 4px;

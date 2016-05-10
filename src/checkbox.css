@@ -16,16 +16,14 @@
     }
 
     @e inner {
-      background-color: var(--checkbox-input-fill);
       border: var(--checkbox-input-border);
       border-radius: var(--checkbox-input-border-radius);
       cursor: pointer;
       display: inline-block;
-      height: var(--checkbox-input-height);
       left: 0;
       position: relative;
+      rect: var(--checkbox-input-width) var(--checkbox-input-height) var(--checkbox-input-fill);
       top: 0;
-      width: var(--checkbox-input-width);
       z-index: var(--index-normal);
 
       &:not(.is-disabled):hover {

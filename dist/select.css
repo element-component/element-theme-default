@@ -65,8 +65,7 @@
   font-size: 12px;
   padding: 9px
 }
-.element-option:hover,
-    .element-option.is-hover{
+.element-option:hover, .element-option.is-hover{
   background-color: rgba(0,0,0, 0.06);
   color: #333
 }
@@ -167,8 +166,7 @@
   position: relative;
   vertical-align: middle
 }
-.element-core-input:hover,
-    .element-core-input.is-active{
+.element-core-input:hover, .element-core-input.is-active{
   border-color: #5da9ff;
   box-shadow: 0 0 2px rgba(0,0,0, 0.18), 0 0 1px #5da9ff
 }
@@ -220,11 +218,11 @@
   right: 10px;
   top: 50%;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg)
+  transform: rotate(45deg)
 }
 .element-select__chevron.is-up{}
 .element-select__chevron.is-up::after{
   margin-top: -2px;
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg)
+  transform: rotate(-135deg)
 }

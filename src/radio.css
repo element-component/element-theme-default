@@ -16,33 +16,29 @@
     }
 
     @e inner {
-      background-color: var(--radio-input-fill);
       border: var(--radio-input-border);
       border-radius: var(--radio-input-border-radius);
+      circle: var(--radio-input-width) var(--radio-input-fill);
       cursor: pointer;
       display: inline-block;
-      height: var(--radio-input-height);
       left: 0;
       position: relative;
       top: 0;
-      width: var(--radio-input-width);
       z-index: var(--index-normal);
 
       &:not(.is-disabled):hover {
-        box-shadow: var(--radio-input-shadow-hover);
         border-color: var(--radio-input-border-color-hover);
+        box-shadow: var(--radio-input-shadow-hover);
       }
 
       &::after {
-        background-color: var(--radio-icon-color);
         border-radius: var(--border-radius-circle);
+        circle: 8px var(--radio-icon-color);
         content: " ";
         display: table;
-        height: 8px;
         left: 3px;
         position: absolute;
         top: 3px;
-        width: 8px;
       }
 
       @when disabled {
