@@ -196,7 +196,7 @@
   --eventpicker-dropdown-sidebar-width: 140px;
   --eventpicker-input-width: 294px;
 
-  /* Organization-Picker
+  /* cascader
   -------------------------- */
-  --organizationpicker-height: 200px;
+  --cascader-height: 200px;
 }

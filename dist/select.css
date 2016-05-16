@@ -52,7 +52,7 @@
   /* Event-picker
   -------------------------- */
 
-  /* Organization-Picker
+  /* cascader
   -------------------------- */
 }
 @charset "UTF-8";
@@ -77,6 +77,19 @@
   background-color: transparent;
   color: #999;
   cursor: not-allowed
+}
+.element-option--arrow{}
+.element-option--arrow:not(.is-last)::after{
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  content: " ";
+  height: 4px;
+  margin-top: 6px;
+  position: absolute;
+  right: 12px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  width: 4px
 }
 .element-optiongroup{
   list-style: none;
@@ -112,6 +125,12 @@
 }
 .element-dropdown:empty{
   display: none
+}
+.element-dropdown__list{
+  margin: 0;
+  max-height: 200px;
+  overflow: auto;
+  padding: 0
 }
 .element-dropdown__search{
   border: 0;

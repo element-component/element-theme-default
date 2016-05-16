@@ -19,6 +19,13 @@
     white-space: nowrap;
     z-index: var(--index-normal);
 
+    @e list {
+      margin: 0;
+      max-height: var(--cascader-height);
+      overflow: auto;
+      padding: 0;
+    }
+
     @e search {
       border: 0;
       border-bottom: var(--input-border);

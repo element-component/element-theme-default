@@ -11,6 +11,21 @@
     font-size: var(--dropdown-font-size);
     padding: 9px;
 
+    @m arrow {
+
+      &:not(.is-last)::after {
+        border-left: 1px solid var(--dropdown-border-color);
+        border-top: 1px solid var(--dropdown-border-color);
+        content: " ";
+        height: 4px;
+        margin-top: 6px;
+        position: absolute;
+        right: 12px;
+        transform: rotate(135deg);
+        width: 4px;
+      }
+    }
+
     @when disabled {
       background-color: transparent;
       color: var(--dropdown-option-color-disabled);
