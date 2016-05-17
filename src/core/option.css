@@ -11,6 +11,11 @@
     font-size: var(--dropdown-font-size);
     padding: 9px;
 
+    @e remark {
+      color: var(--dropdown-option-pinyin-color);
+      float: right;
+    }
+
     @m arrow {
 
       &:not(.is-last)::after {

@@ -78,6 +78,10 @@
   color: #999;
   cursor: not-allowed
 }
+.element-option__remark{
+  color: #999;
+  float: right
+}
 .element-option--arrow{}
 .element-option--arrow:not(.is-last)::after{
   border-left: 1px solid #ccc;
@@ -126,21 +130,17 @@
 .element-dropdown:empty{
   display: none
 }
+.element-dropdown__empty{
+  color: #666;
+  font-size: 12px;
+  padding: 7px;
+  text-align: center
+}
 .element-dropdown__list{
   margin: 0;
   max-height: 200px;
   overflow: auto;
   padding: 0
-}
-.element-dropdown__search{
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  border-radius: 0;
-  display: block
-}
-.element-dropdown__search:hover{
-  border-bottom: 1px solid #ccc;
-  box-shadow: none
 }
 .element-dropdown__option{
   max-height: 250px;

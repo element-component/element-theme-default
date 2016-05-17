@@ -19,23 +19,18 @@
     white-space: nowrap;
     z-index: var(--index-normal);
 
+    @e empty {
+      color: var(--dropdown-option-empty-color);
+      font-size: var(--input-font-size);
+      padding: 7px;
+      text-align: center;
+    }
+
     @e list {
       margin: 0;
       max-height: var(--cascader-height);
       overflow: auto;
       padding: 0;
-    }
-
-    @e search {
-      border: 0;
-      border-bottom: var(--input-border);
-      border-radius: 0;
-      display: block;
-
-      &:hover {
-        border-bottom: var(--input-border);
-        box-shadow: none;
-      }
     }
 
     @e option {
