@@ -54,6 +54,9 @@
 
   /* cascader
   -------------------------- */
+
+  /* Switch
+ -------------------------- */
 }
 @charset "UTF-8";
 @charset "UTF-8";
@@ -92,7 +95,7 @@
   position: absolute;
   right: 12px;
   -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+          transform: rotate(135deg);
   width: 4px
 }
 .element-optiongroup{
@@ -241,11 +244,11 @@
   right: 10px;
   top: 50%;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg)
+          transform: rotate(45deg)
 }
 .element-select__chevron.is-up{}
 .element-select__chevron.is-up::after{
   margin-top: -2px;
   -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg)
+          transform: rotate(-135deg)
 }

@@ -199,4 +199,12 @@
   /* cascader
   -------------------------- */
   --cascader-height: 200px;
+
+  /* Switch
+ -------------------------- */
+  --switch-border-color: var(--border-color-base);
+  --switch-color: var(--color-blue);
+  --switch-background-color: var(--color-grey);
+  --switch-background-color-active: var(--color-white);
+  --switch-label-color: var(--color-white);
 }

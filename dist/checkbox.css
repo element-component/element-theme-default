@@ -54,6 +54,9 @@
 
   /* cascader
   -------------------------- */
+
+  /* Switch
+ -------------------------- */
 }
 .element-checkbox{
   color: #333;
@@ -94,7 +97,7 @@
   position: absolute;
   top: 1px;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
   width: 4px
 }
 .element-checkbox__inner.is-disabled.is-checked::after{
