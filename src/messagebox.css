@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import "./common/var.css";
+
+@component-namespace element {
+
+  @b dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    overflow: hidden;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    @e header {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      padding: 3px 8px;
+      background-color: var(--dialog-background-color);
+    }
+
+    @e close {
+      cursor: pointer;
+
+      &:hover {
+        color: #18a689;
+      }
+    }
+
+    @e title {
+      line-height: 1;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    @e body {
+      padding: 10px;
+      overflow: auto;
+    }
+
+    @e headerbtn {
+      float: right;
+    }
+
+    @e footer {
+      border-top: 1px solid #e5e5e5;
+      padding: 5px 20px;
+      text-align: right;
+      background-color: var(--dialog-footer-background);
+    }
+  }
+
+  .dialog-bounce-enter {
+    animation: dialog-bounce-in .3s cubic-bezier(0.3, 0, 0, 1.5);
+  }
+
+  .dialog-bounce-leave {
+    animation: dialog-bounce-out .2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+
+  @keyframes dialog-bounce-in {
+    0% {
+      transform: translate3d(-50%, -50%, 0) scale(0.8);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) scale(1);
+    }
+  }
+
+  @keyframes dialog-bounce-out {
+    0% {
+      transform: translate3d(-50%, -50%, 0) scale(1);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) scale(0.7);
+    }
+  }
+}

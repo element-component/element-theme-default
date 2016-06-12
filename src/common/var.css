@@ -207,4 +207,9 @@
   --switch-background-color: var(--color-grey);
   --switch-background-color-active: var(--color-white);
   --switch-label-color: var(--color-white);
+
+  /* Dialog
+ -------------------------- */
+  --dialog-background-color: var(--color-blue);
+  --dialog-footer-background: var(--color-blue-lighter);
 }

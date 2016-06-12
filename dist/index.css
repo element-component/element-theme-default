@@ -57,6 +57,9 @@
 
   /* Switch
  -------------------------- */
+
+  /* Dialog
+ -------------------------- */
 }
 @charset "UTF-8";
 @charset "UTF-8";
@@ -66,24 +69,24 @@
   cursor: pointer;
   display: block;
   font-size: 12px;
-  padding: 9px
+  padding: 9px;
 }
 .element-option:hover, .element-option.is-hover{
   background-color: rgba(0,0,0, 0.06);
-  color: #333
+  color: #333;
 }
 .element-option.is-selected{
   background-color: rgba(46,144,254, 0.12);
-  color: #2e90fe
+  color: #2e90fe;
 }
 .element-option.is-disabled{
   background-color: transparent;
   color: #999;
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 .element-option__remark{
   color: #999;
-  float: right
+  float: right;
 }
 .element-option--arrow{}
 .element-option--arrow:not(.is-last)::after{
@@ -96,24 +99,24 @@
   right: 12px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
-  width: 4px
+  width: 4px;
 }
 .element-optiongroup{
   list-style: none;
-  padding-left: 0
+  padding-left: 0;
 }
 .element-optiongroup .element-option{
-  padding-left: 21px
+  padding-left: 21px;
 }
 .element-optiongroup__title{
   box-sizing: border-box;
   color: #999;
   display: inline-block;
   font-size: 12px;
-  padding: 8px
+  padding: 8px;
 }
 .element-optiongroup__title:hover{
-  background-color: inherit
+  background-color: inherit;
 }
 .element-dropdown{
   background-color: #fff;
@@ -128,26 +131,26 @@
   padding: 0;
   position: absolute;
   white-space: nowrap;
-  z-index: 1
+  z-index: 1;
 }
 .element-dropdown:empty{
-  display: none
+  display: none;
 }
 .element-dropdown__empty{
   color: #666;
   font-size: 12px;
   padding: 7px;
-  text-align: center
+  text-align: center;
 }
 .element-dropdown__list{
   margin: 0;
   max-height: 200px;
   overflow: auto;
-  padding: 0
+  padding: 0;
 }
 .element-dropdown__option{
   max-height: 250px;
-  overflow: auto
+  overflow: auto;
 }
 @charset "UTF-8";
 .element-core-tag{
@@ -159,7 +162,7 @@
   margin: 1px;
   outline: 0;
   padding: 3px 16px 3px 3px;
-  position: relative
+  position: relative;
 }
 .element-core-tag__button{
   color: #666;
@@ -170,7 +173,7 @@
   padding: 5px;
   position: absolute;
   right: 0;
-  top: 0
+  top: 0;
 }
 @charset "UTF-8";
 .element-core-input{
@@ -186,24 +189,24 @@
   min-width: 140px;
   padding: 2px;
   position: relative;
-  vertical-align: middle
+  vertical-align: middle;
 }
 .element-core-input:hover, .element-core-input.is-active{
   border-color: #5da9ff;
-  box-shadow: 0 0 2px rgba(0,0,0, 0.18), 0 0 1px #5da9ff
+  box-shadow: 0 0 2px rgba(0,0,0, 0.18), 0 0 1px #5da9ff;
 }
 .element-core-input.is-multiple{
-  cursor: text
+  cursor: text;
 }
 .element-core-input.is-readonly{
-  cursor: pointer
+  cursor: pointer;
 }
 .element-core-input.is-disabled{
   background-color: #eee;
   border-color: inherit;
   box-shadow: none;
   color: #bbb;
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 .element-core-input__original{
   background-color: inherit;
@@ -214,12 +217,12 @@
   line-height: 1.2;
   outline: none;
   padding: 5px 7px;
-  width: auto
+  width: auto;
 }
 .element-input{
   display: inline-block;
   font-size: 12px;
-  position: relative
+  position: relative;
 }
 .element-input__placeholder{
   background-color: #fff;
@@ -230,27 +233,27 @@
   top: 7px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  z-index: 1
+  z-index: 1;
 }
 .element-input__placeholder.is-enter{
   color: #5da9ff;
-  top: -8px
+  top: -8px;
 }
 @charset "UTF-8";
 .element-select{
   background-color: #fff;
   display: inline-block;
-  position: relative
+  position: relative;
 }
 .element-select .element-dropdown__search{
   border: 0;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
-  display: block
+  display: block;
 }
 .element-select .element-dropdown__search:hover{
   border-bottom: 1px solid #ccc;
-  box-shadow: none
+  box-shadow: none;
 }
 .element-select__chevron{}
 .element-select__chevron::after{
@@ -265,25 +268,25 @@
   right: 10px;
   top: 50%;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg)
+          transform: rotate(45deg);
 }
 .element-select__chevron.is-up{}
 .element-select__chevron.is-up::after{
   margin-top: -2px;
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg)
+          transform: rotate(-135deg);
 }
 @charset "UTF-8";
 .element-checkbox{
   color: #333;
-  position: relative
+  position: relative;
 }
 .element-checkbox__input{
   display: inline-block;
   line-height: 0;
   position: relative;
   vertical-align: middle;
-  white-space: nowrap
+  white-space: nowrap;
 }
 .element-checkbox__inner{
   border: 1px solid #ccc;
@@ -296,11 +299,11 @@
   height: 14px;
   background-color: #fff;
   top: 0;
-  z-index: 1
+  z-index: 1;
 }
 .element-checkbox__inner:not(.is-disabled):hover{
   border-color: #5da9ff;
-  box-shadow: 0 0 2px rgba(0,0,0, 0.18), 0 0 1px #5da9ff
+  box-shadow: 0 0 2px rgba(0,0,0, 0.18), 0 0 1px #5da9ff;
 }
 .element-checkbox__inner::after{
   border: 2px solid #fff;
@@ -314,45 +317,45 @@
   top: 1px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  width: 4px
+  width: 4px;
 }
 .element-checkbox__inner.is-disabled.is-checked::after{
-  border-color: #ccc
+  border-color: #ccc;
 }
 .element-checkbox__inner.is-checked{
   background-color: #2e90fe;
-  border-color: #2e90fe
+  border-color: #2e90fe;
 }
 .element-checkbox__inner.is-checked::after{
-  border-color: #fff
+  border-color: #fff;
 }
 .element-checkbox__inner.is-disabled{
   background-color: #eee;
   border-color: #ccc;
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 .element-checkbox__inner.is-disabled::after{
-  border-color: #eee
+  border-color: #eee;
 }
 .element-checkbox__original{
   opacity: 0;
   outline: none;
-  position: absolute
+  position: absolute;
 }
 .element-checkbox__label{
-  font-size: 12px
+  font-size: 12px;
 }
 @charset "UTF-8";
 .element-radio{
   color: #333;
-  position: relative
+  position: relative;
 }
 .element-radio__input{
   display: inline-block;
   line-height: 0;
   position: relative;
   vertical-align: middle;
-  white-space: nowrap
+  white-space: nowrap;
 }
 .element-radio__inner{
   border: 1px solid #ccc;
@@ -366,11 +369,11 @@
   left: 0;
   position: relative;
   top: 0;
-  z-index: 1
+  z-index: 1;
 }
 .element-radio__inner:not(.is-disabled):hover{
   border-color: #5da9ff;
-  box-shadow: 0 0 2px rgba(0,0,0, 0.18), 0 0 1px #5da9ff
+  box-shadow: 0 0 2px rgba(0,0,0, 0.18), 0 0 1px #5da9ff;
 }
 .element-radio__inner::after{
   border-radius: 100%;
@@ -382,37 +385,37 @@
   display: table;
   left: 3px;
   position: absolute;
-  top: 3px
+  top: 3px;
 }
 .element-radio__inner.is-disabled.is-checked::after{
-  background-color: #ccc
+  background-color: #ccc;
 }
 .element-radio__inner.is-checked{
-  border-color: #5da9ff
+  border-color: #5da9ff;
 }
 .element-radio__inner.is-checked::after{
-  background-color: #2e90fe
+  background-color: #2e90fe;
 }
 .element-radio__inner.is-disabled{
   background-color: #eee;
   border-color: #ccc;
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 .element-radio__inner.is-disabled::after{
-  background-color: #eee
+  background-color: #eee;
 }
 .element-radio__original{
   opacity: 0;
   outline: none;
-  position: absolute
+  position: absolute;
 }
 .element-radio__label{
-  font-size: 12px
+  font-size: 12px;
 }
 @charset "UTF-8";
 .element-cascader{
   display: inline-block;
-  position: relative
+  position: relative;
 }
 .element-cascader__dropdown{
   background-color: #fff;
@@ -423,10 +426,10 @@
   max-height: 200px;
   position: absolute;
   white-space: nowrap;
-  z-index: 10
+  z-index: 10;
 }
 .element-cascader__wrap{
-  overflow: hidden
+  overflow: hidden;
 }
 .element-cascader__menu{
   border: 0;
@@ -434,14 +437,14 @@
   display: inline-block;
   margin: 0;
   position: relative;
-  vertical-align: top
+  vertical-align: top;
 }
 .element-cascader__menu::before{
   border-left: 1px solid #ccc;
   content: " ";
   height: 200px;
   left: 0;
-  position: absolute
+  position: absolute;
 }
 @charset "UTF-8";
 .element-switch{
@@ -451,7 +454,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative
+  position: relative;
 }
 .element-switch.is-disabled{}
 .element-switch.is-disabled .element-switch__mask{
@@ -461,7 +464,7 @@
   height: 32px;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, .5);
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 .element-switch__label{
   position: absolute;
@@ -473,20 +476,20 @@
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none
+          user-select: none;
 }
 .element-switch__label:empty{
-  margin-left: 0
+  margin-left: 0;
 }
 .element-switch__label *{
   display: inline-block;
-  color: #fff
+  color: #fff;
 }
 .element-switch__label--left{
-  left: 12px
+  left: 12px;
 }
 .element-switch__label--right{
-  left: 37px
+  left: 37px;
 }
 .element-switch__core{
   margin: 0;
@@ -503,14 +506,14 @@
   background: #ccc;
   cursor: pointer;
   -webkit-transition: .3s;
-  transition: .3s
+  transition: .3s;
 }
 .element-switch__core::after{
   content: " ";
   top: 0;
   left: 0;
   position: absolute;
-  border-radius: 15px
+  border-radius: 15px;
 }
 .element-switch__core::after{
   -webkit-transition: -webkit-transform .3s;
@@ -521,13 +524,103 @@
   height: 30px;
   z-index: 100;
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .4)
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 }
 .element-switch__core:checked{
   border-color: #2e90fe;
-  background-color: #2e90fe
+  background-color: #2e90fe;
 }
 .element-switch__core:checked::after{
   -webkit-transform: translateX(30px);
-          transform: translateX(30px)
+          transform: translateX(30px);
+}
+@charset "UTF-8";
+.element-dialog{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  overflow: hidden;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.element-dialog__header{
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 3px 8px;
+  background-color: #2e90fe;
+}
+.element-dialog__close{
+  cursor: pointer;
+}
+.element-dialog__close:hover{
+  color: #18a689;
+}
+.element-dialog__title{
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.element-dialog__body{
+  padding: 10px;
+  overflow: auto;
+}
+.element-dialog__headerbtn{
+  float: right;
+}
+.element-dialog__footer{
+  border-top: 1px solid #e5e5e5;
+  padding: 5px 20px;
+  text-align: right;
+  background-color: rgba(46,144,254, 0.12);
+}
+.dialog-bounce-enter {
+  -webkit-animation: dialog-bounce-in .3s cubic-bezier(0.3, 0, 0, 1.5);
+          animation: dialog-bounce-in .3s cubic-bezier(0.3, 0, 0, 1.5);
+}
+.dialog-bounce-leave {
+  -webkit-animation: dialog-bounce-out .2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+          animation: dialog-bounce-out .2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+@-webkit-keyframes dialog-bounce-in {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.8);
+            transform: translate3d(-50%, -50%, 0) scale(0.8);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+}
+@keyframes dialog-bounce-in {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.8);
+            transform: translate3d(-50%, -50%, 0) scale(0.8);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+}
+@-webkit-keyframes dialog-bounce-out {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.7);
+            transform: translate3d(-50%, -50%, 0) scale(0.7);
+  }
+}
+@keyframes dialog-bounce-out {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.7);
+            transform: translate3d(-50%, -50%, 0) scale(0.7);
+  }
 }

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+:root {
+
+  /* Colors
+  -------------------------- */
+
+  /* Border
+  -------------------------- */
+
+  /* Fill
+  -------------------------- */
+
+  /* Font
+  -------------------------- */
+
+  /* Size
+  -------------------------- */
+
+  /* z-index
+  -------------------------- */
+
+  /* Checkbox
+  -------------------------- */
+
+  /* Radio
+  -------------------------- */
+
+  /* Input
+  -------------------------- */
+
+  /* Dropdown
+  -------------------------- */
+
+  /* Tag
+  -------------------------- */
+
+  /* Group
+  -------------------------- */
+
+  /* Tab
+  -------------------------- */
+
+  /* Button
+  -------------------------- */
+
+  /* Shop-type-picker
+  -------------------------- */
+
+  /* City-picker
+  -------------------------- */
+
+  /* Event-picker
+  -------------------------- */
+
+  /* cascader
+  -------------------------- */
+
+  /* Switch
+ -------------------------- */
+
+  /* Dialog
+ -------------------------- */
+}
+.element-dialog{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  overflow: hidden;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.element-dialog__header{
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 3px 8px;
+  background-color: #2e90fe;
+}
+.element-dialog__close{
+  cursor: pointer;
+}
+.element-dialog__close:hover{
+  color: #18a689;
+}
+.element-dialog__title{
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.element-dialog__body{
+  padding: 10px;
+  overflow: auto;
+}
+.element-dialog__headerbtn{
+  float: right;
+}
+.element-dialog__footer{
+  border-top: 1px solid #e5e5e5;
+  padding: 5px 20px;
+  text-align: right;
+  background-color: rgba(46,144,254, 0.12);
+}
+.dialog-bounce-enter {
+  -webkit-animation: dialog-bounce-in .3s cubic-bezier(0.3, 0, 0, 1.5);
+          animation: dialog-bounce-in .3s cubic-bezier(0.3, 0, 0, 1.5);
+}
+.dialog-bounce-leave {
+  -webkit-animation: dialog-bounce-out .2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+          animation: dialog-bounce-out .2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+@-webkit-keyframes dialog-bounce-in {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.8);
+            transform: translate3d(-50%, -50%, 0) scale(0.8);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+}
+@keyframes dialog-bounce-in {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.8);
+            transform: translate3d(-50%, -50%, 0) scale(0.8);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+}
+@-webkit-keyframes dialog-bounce-out {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.7);
+            transform: translate3d(-50%, -50%, 0) scale(0.7);
+  }
+}
+@keyframes dialog-bounce-out {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0.7);
+            transform: translate3d(-50%, -50%, 0) scale(0.7);
+  }
+}
